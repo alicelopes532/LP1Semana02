@@ -27,6 +27,17 @@ namespace ValoresEspeciais
             Console.WriteLine($"Double -∞: {double.NegativeInfinity}");
             Console.WriteLine($"Double +∞: {double.PositiveInfinity}");
             Console.WriteLine($"Double NaN: {double.NaN}");
+
+            Console.WriteLine("\nTeste de Overflow em float:");
+            float overflowFloat1 = float.MaxValue * 2;
+            float overflowFloat2 = float.MaxValue * float.MaxValue;
+
+            Console.WriteLine($"float.MaxValue * 2 = {overflowFloat1}");
+            Console.WriteLine($"float.MaxValue * float.MaxValue = {overflowFloat2}");
+
+            Console.WriteLine("\nTeste de Underflow em float:");
+            float underflowFloat = float.MinValue / 2;
+            Console.WriteLine($"float.MinValue / 2 = {underflowFloat}");
         }
     }
 }
