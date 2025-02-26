@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace ValoresEspeciais
 {
@@ -18,6 +18,15 @@ namespace ValoresEspeciais
             Console.WriteLine($"float:   {float.MinValue} a {float.MaxValue}");
             Console.WriteLine($"double:  {double.MinValue} a {double.MaxValue}");
             Console.WriteLine($"decimal: {decimal.MinValue} a {decimal.MaxValue}");
+            
+            Console.WriteLine("\nValores Especiais de float e double:");
+            Console.WriteLine($"Float -∞: {float.NegativeInfinity}");
+            Console.WriteLine($"Float +∞: {float.PositiveInfinity}");
+            Console.WriteLine($"Float NaN: {float.NaN}");
+
+            Console.WriteLine($"Double -∞: {double.NegativeInfinity}");
+            Console.WriteLine($"Double +∞: {double.PositiveInfinity}");
+            Console.WriteLine($"Double NaN: {double.NaN}");
         }
     }
 }
