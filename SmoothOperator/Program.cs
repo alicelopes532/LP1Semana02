@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace SmoothOperator
 {
@@ -9,9 +9,8 @@ namespace SmoothOperator
             int numero;
             Console.WriteLine("Insere um número inteiro: ");
             while (!int.TryParse(Console.ReadLine(), out numero) || numero < sbyte.MinValue || numero > sbyte.MaxValue)
-            sbyte n = (sbyte)numero;
-            Console.WriteLine(--n);
-            Console.WriteLine(++n);
+            Console.WriteLine(--numero);
+            Console.WriteLine(++numero);
             
         }
     }
